@@ -3,6 +3,13 @@ git_gc = git gc "$@"
 jobs = 5
 
 include = cat ~/.config/mr/available.d/*
+include = cat ~/.config/mr/work.d/*
+
+[.config/vcsh/repo.d/tmux.git]
+checkout = vcsh clone 'git@github.com:etheld/vcsh-tmux.git' 'tmux'
+
+[.config/vcsh/repo.d/zsh.git]
+checkout = vcsh clone 'git@github.com:etheld/vcsh-zsh.git' 'zsh'
 
 #[git/snowstorm-provision]
 #checkout = git clone 'gwelican@bitbucket.org:gwelican/snowstorm-provision.git' 'snowstorm-provision'
@@ -10,26 +17,14 @@ include = cat ~/.config/mr/available.d/*
 #[git/snowstorm-provision/inventory]
 #checkout = git clone 'gwelican@bitbucket.org:gwelican/inventory.git' 'inventory'
 
-#[git/pacman]
-#checkout = git clone 'ssh://git@stash.sea.corp.expecn.com:7999/pay/pacman.git' 'pacman'
-
 #[git/spring-cloud-pipelines]
 #checkout = git clone 'https://github.com/spring-cloud/spring-cloud-pipelines' 'spring-cloud-pipelines'
-
-#[git/vault]
-#checkout = git clone 'ssh://git@stash.sea.corp.expecn.com:7999/pv/vault.git' 'vault'
 
 #[git/dotfiles]
 #checkout = git clone 'https://github.com/geerlingguy/dotfiles' 'dotfiles'
 
-#[git/aws-terraform-deployment-config]
-#checkout = git clone 'ssh://git@stash.sea.corp.expecn.com:7999/pay/aws-terraform-deployment-config.git' 'aws-terraform-deployment-config'
+[.config/vcsh/repo.d/mrrc.git]
+checkout = vcsh clone 'git@github.com:etheld/mrrc.git' 'mrrc'
 
-#[git/aws-terraform-modules]
-#checkout = git clone 'ssh://git@stash.sea.corp.expecn.com:7999/pay/aws-terraform-modules.git' 'aws-terraform-modules'
-
-[.config/vcsh/repo.d/tmux.git]
-checkout = vcsh clone 'git@github.com:etheld/vcsh-tmux.git' 'tmux'
-
-[.config/vcsh/repo.d/zsh.git]
-checkout = vcsh clone 'git@github.com:etheld/vcsh-zsh.git' 'zsh'
+[.config/vcsh/repo.d/hammerspoon.git]
+checkout = vcsh clone 'git@github.com:etheld/vcsh-hammerspoon.git' 'hammerspoon'
