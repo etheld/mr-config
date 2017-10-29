@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/mrrc.git]
+checkout = vcsh clone git@github.com:etheld/mr-config.git mrrc
