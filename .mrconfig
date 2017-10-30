@@ -2,8 +2,8 @@
 git_gc = git gc "$@"
 jobs = 5
 
-include = cat ~/.config/mr/available.d/*
-include = cat ~/.config/mr/work.d/*
+#include = cat ~/.config/mr/available.d/*
+#include = cat ~/.config/mr/work.d/*
 
 [.config/vcsh/repo.d/tmux.git]
 checkout = vcsh clone 'git@github.com:etheld/vcsh-tmux.git' 'tmux'
